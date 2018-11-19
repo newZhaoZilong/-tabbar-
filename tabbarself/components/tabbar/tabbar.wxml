@@ -1,0 +1,10 @@
+
+<view class="tab">
+  <block wx:for="{{tabbar.list}}" wx:key="text">
+    <view class="item_tab" data-id="{{index}}" bindtap="clickTap">
+      <image class="img_tab" src="{{current==index?item.selectedIconPath:item.iconPath}}"></image>
+      <text class="text_tab" style="color:{{current==index?tabbar.selectedColor:tabbar.color}};">{{item.text}}</text>
+      <image class="tab-center" src="/images/lun.png"></image>
+    </view>
+  </block>
+</view>

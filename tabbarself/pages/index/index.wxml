@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<block wx:if="{{tabId === 0}}">
+<div>这是首页</div>
+</block>
+<block wx:else>
+<div>这是第二页</div>
+</block>
+<tabbar tabbar="{{tabbar}}" bindtabchange="change" current="{{tabId}}"></tabbar>

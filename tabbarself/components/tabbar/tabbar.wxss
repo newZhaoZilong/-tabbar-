@@ -1,0 +1,48 @@
+/* pages/components/tabBar/tabBar.wxss */
+
+/*tab标签, 0rpx 0rpx 50rpx #efefef*/
+
+.tab {
+  position: fixed;
+  bottom: 0rpx;
+  z-index: 999;
+  width: 100%;
+  height: 111rpx;
+  background-color: #fcfcfc;
+  box-shadow: 0rpx 0rpx 40rpx #e3e3e3;
+  display: flex;
+}
+
+/*tab条目*/
+
+.item_tab {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*tab图片*/
+
+.img_tab {
+  width: 59.2rpx;
+  height: 59.2rpx;
+}
+
+/*tab文字*/
+
+.text_tab {
+  font-size: 24rpx;
+}
+
+/* tab中心 */
+.tab-center{
+  position:absolute;
+  top:0rpx;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  width: 100rpx;
+  height:100rpx;
+}
