@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+import {a as A} from '../../utils/util.js'
 Page({
   data: {
     tabbar: {
@@ -19,6 +19,9 @@ Page({
       ]
     },
     tabId:0
+  },
+  onLoad(){
+    console.log(A);
   },
   change:function(e){
     console.log(e)
